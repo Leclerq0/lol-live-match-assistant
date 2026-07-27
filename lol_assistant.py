@@ -189,8 +189,8 @@ class OverlayApp:
         self.root.after(1000, self.update_ui)
 
 if __name__ == "__main__":
-    secilen_oyuncu = ""
-    secilen_rol = "MID"
+    secilen_oyuncu = "secilen_oyuncu"
+    secilen_rol = "secilen_rol"
 
     threading.Thread(target=backend_loop, args=(secilen_oyuncu, secilen_rol), daemon=True).start()
 
